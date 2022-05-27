@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img alt="appMySkills" src="https://github.com/pallomagualter/layoutMaterialUI/blob/main/Toggle%20Theme.gif" width="35%">
+   <img alt="cadastroMaterialUI" src="https://github.com/pallomagualter/layoutMaterialUI/blob/main/Toggle-Theme.gif">
 </p>
 
 ## 🚀 Tecnologias
