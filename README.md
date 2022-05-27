@@ -31,7 +31,7 @@ Uma aplicação criada com o intuito de aprender sobre as tecnologias utilizadas
 
 ## :information_source: Desenvolvimento
 
-### :iphone: Mobile:
+### :computer: Web:
 
 ```bash
 # Clone o Repositório
