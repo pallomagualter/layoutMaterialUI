@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+<h1 align="center">
+    Cadastro com React, Material UI 5 e Typescript
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-## Available Scripts
+<p align="center">
+ <img src="" alt="PRs welcome!" />
 
-In the project directory, you can run:
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
+</p>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+  <img alt="appMySkills" src="https://github.com/pallomagualter/mySkills/blob/main/appMySkills.png" width="35%">
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 Tecnologias
 
-### `npm test`
+- [Material UI](https://mui.com/material-ui/getting-started/installation/)
+- [React](https://pt-br.reactjs.org/docs/getting-started.html)
+- [Typescript](https://pt-br.reactjs.org/docs/static-type-checking.html#typescript)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Projeto
 
-### `npm run build`
+Uma aplicação criada com o intuito de aprender sobre as tecnologias utilizadas durante o [👑 Curso de React com Material UI 5 e Typescript](https://youtube.com/playlist?list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ) ministrado pelo Lucas Souza Dev no Youtube.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :information_source: Desenvolvimento
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### :iphone: Mobile:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone o Repositório
+$  git clone https://github.com/pallomagualter/layoutMaterialUI.git
 
-### `npm run eject`
+#Instale as dependências
+$ yarn 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Inicie a aplicação
+$ yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :memo: Licença
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com 💜 by Palloma Gualter :wave:
