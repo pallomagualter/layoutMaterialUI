@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-   <img alt="cadastroMaterialUI" src="https://github.com/pallomagualter/layoutMaterialUI/blob/main/Toggle-Theme.gif">
+   <img alt="cadastroMaterialUI" src="https://github.com/pallomagualter/layoutMaterialUI/blob/main/Menu-lateral.gif">
 </p>
 
 ## 🚀 Tecnologias
