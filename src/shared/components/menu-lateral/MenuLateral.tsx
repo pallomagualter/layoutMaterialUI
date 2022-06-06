@@ -1,7 +1,7 @@
 import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useMediaQuery, useTheme } from '@mui/material';
 import { Box } from '@mui/system';
 import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
-import { useDrawerContext } from '../../contexts';
+import { useDrawerContext, useAppThemeContext } from '../../contexts';
 
 interface IListItemLinkProps {
   to: string;
@@ -32,6 +32,7 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ to, icon, label, onClick }
 };
 
 export const MenuLateral: React.FC = ({ children }) => {
+  const { toggleTheme, themeName, themeIconName } = useAppThemeContext();
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -62,6 +63,17 @@ export const MenuLateral: React.FC = ({ children }) => {
                   onClick={smDown ? toggleDrawerOpen : undefined}
                 />
               ))}
+            </List>
+          </Box>
+
+          <Box>
+            <List component='nav'>
+              <ListItemButton onClick={toggleTheme}>
+                <ListItemIcon>
+                  <Icon>{themeIconName}</Icon>
+                </ListItemIcon>
+                <ListItemText primary={themeName} />
+              </ListItemButton>
             </List>
           </Box>
 

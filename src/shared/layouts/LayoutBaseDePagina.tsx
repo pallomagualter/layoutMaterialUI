@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import { Box } from '@mui/system';
-import { Button, Icon, IconButton, Theme, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Icon, IconButton, Theme, Typography, useMediaQuery, useTheme } from '@mui/material';
 
-import { useAppThemeContext, useDrawerContext } from '../contexts';
+import { useDrawerContext } from '../contexts';
 
 interface ILayoutBaseDePaginaProps {
   title: string;
@@ -14,7 +14,6 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({ childre
   const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'));
   const theme = useTheme();
 
-  const { toggleTheme, themeName } = useAppThemeContext();
   const { toggleDrawerOpen } = useDrawerContext();
 
   return (
@@ -34,10 +33,6 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({ childre
         >
           {title}
         </Typography>
-      </Box>
-
-      <Box>
-        <Button variant='contained' color='primary' onClick={toggleTheme} >{themeName}</Button>
       </Box>
 
       {toolbar && (
