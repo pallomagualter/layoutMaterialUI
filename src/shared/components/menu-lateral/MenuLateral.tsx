@@ -1,5 +1,4 @@
-import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useMediaQuery, useTheme } from '@mui/material';
-import { Box } from '@mui/system';
+import { Avatar, Box, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useMediaQuery, useTheme } from '@mui/material';
 import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 import { useDrawerContext, useAppThemeContext } from '../../contexts';
 
@@ -50,30 +49,34 @@ export const MenuLateral: React.FC = ({ children }) => {
             />
           </Box>
 
-          <Divider />
-
           <Box flex={1} >
-            <List component='nav'>
+            <List component='nav'  >
               {drawerOptions.map(drawerOption => (
-                <ListItemLink
-                  key={drawerOption.path}
-                  icon={drawerOption.icon}
-                  to={drawerOption.path}
-                  label={drawerOption.label}
-                  onClick={smDown ? toggleDrawerOpen : undefined}
-                />
+                <>
+                  <Divider />
+                  <ListItemLink
+                    key={drawerOption.path}
+                    icon={drawerOption.icon}
+                    to={drawerOption.path}
+                    label={drawerOption.label}
+                    onClick={smDown ? toggleDrawerOpen : undefined}
+                  />
+                </>
               ))}
+              <Divider />
             </List>
           </Box>
 
           <Box>
             <List component='nav'>
+              <Divider />
               <ListItemButton onClick={toggleTheme}>
                 <ListItemIcon>
                   <Icon>{themeIconName}</Icon>
                 </ListItemIcon>
                 <ListItemText primary={themeName} />
               </ListItemButton>
+              <Divider />
             </List>
           </Box>
 

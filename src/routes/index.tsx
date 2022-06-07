@@ -13,7 +13,17 @@ export const AppRoutes = () => {
         icon: 'home',
         path: '/pagina-inicial',
         label: 'Página Inicial',
-      }
+      },
+      {
+        icon: 'person',
+        path: '/pagina-um',
+        label: 'Página 1',
+      },
+      {
+        icon: 'star',
+        path: '/pagina-dois',
+        label: 'Página 2',
+      },
     ]);
   }, []);
 
