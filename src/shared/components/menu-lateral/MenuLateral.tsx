@@ -53,7 +53,7 @@ export const MenuLateral: React.FC = ({ children }) => {
             <List component='nav'  >
               {drawerOptions.map(drawerOption => (
                 <>
-                  <Divider />
+                  <Divider variant='inset' component='li' />
                   <ListItemLink
                     key={drawerOption.path}
                     icon={drawerOption.icon}

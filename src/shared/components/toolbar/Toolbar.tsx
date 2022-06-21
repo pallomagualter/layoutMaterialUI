@@ -1,11 +1,58 @@
-import { Box, Button, Paper, TextField } from '@mui/material';
+import { Box, Button, Icon, Paper, TextField, useTheme } from '@mui/material';
 
-export const Toolbar: React.FC = () => {
+interface IToolbarProps {
+  textOfTheSearch?: string;
+  showInputSearch?: boolean;
+  toggleTextSearch?: (newText: string) => void;
+  textNewButton?: string;
+  showNewButton?: boolean;
+  onClickNewButton?: () => void;
+}
+
+export const Toolbar: React.FC<IToolbarProps> = ({
+  textOfTheSearch = '',
+  showInputSearch = false,
+  toggleTextSearch,
+  textNewButton = 'Novo',
+  showNewButton = true,
+  onClickNewButton
+}) => {
+  const theme = useTheme();
+
   return (
-    <Box component={Paper}>
-      <TextField />
+    <Box
+      height={theme.spacing(5)}
+      marginX={1}
+      padding={1}
+      paddingX={2}
+      display='flex'
+      gap={1}
+      alignItems='center'
+      component={Paper}
+    >
 
-      <Button>Novo</Button>
+      {showInputSearch && (
+        <TextField
+          size='small'
+          value={textOfTheSearch}
+          onChange={(e) => toggleTextSearch?.(e.target.value)}
+          placeholder='Pesquisar...'
+        />
+      )}
+
+      <Box flex={1} display='flex' justifyContent='end'>
+        {showNewButton && (
+          <Button
+            color='primary'
+            disableElevation
+            variant='contained'
+            onClick={onClickNewButton}
+            endIcon={<Icon>add</Icon>}
+          >
+            {textNewButton}
+          </Button>
+        )}
+      </Box>
     </Box>
   );
 };

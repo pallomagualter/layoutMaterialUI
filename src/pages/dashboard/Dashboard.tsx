@@ -7,7 +7,9 @@ export const Dashboard: React.FC = () => {
     <LayoutBaseDePagina
       title='Página Inicial'
       toolbar={(
-        <Toolbar />
+        <Toolbar
+          showInputSearch
+        />
       )}
     >
       Testando
