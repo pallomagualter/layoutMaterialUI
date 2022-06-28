@@ -30,7 +30,7 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ to, icon, label, onClick }
   );
 };
 
-export const MenuLateral: React.FC = ({ children }) => {
+export const SideMenu: React.FC = ({ children }) => {
   const { toggleTheme, themeName, themeIconName } = useAppThemeContext();
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down('sm'));

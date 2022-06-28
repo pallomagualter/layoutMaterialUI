@@ -1,2 +1,3 @@
-export * from './menu-lateral/MenuLateral';
-export * from './toolbar/Toolbar';
+export * from './side-menu/SideMenu';
+export * from './detail-tools/DetailTools';
+export * from './tools-of-list/ToolsOfList';
